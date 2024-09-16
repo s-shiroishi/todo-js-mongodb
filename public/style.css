@@ -1,0 +1,115 @@
+body{
+    background-color: #f1f4f8;
+}
+
+.form-container{
+    width: 50%;
+    max-width: 700px;
+    margin: 80px auto 0 auto;
+}
+
+.input-form{
+    height: 200px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 9px 15px -8px #777777;
+}
+
+.form-input{
+    width: 100%;
+    text-align: center;
+}
+
+.title{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.form-input input{
+    width: 80%;
+    padding: 4px 8px;
+    font-size: large;
+    text-align: left;
+    border: 1px solid rgb(103, 100, 100);
+}
+
+.input-btn{
+    padding: 4px 40px;
+    background-color: rgb(36, 165, 165);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-btn:hover{
+    background-color: rgb(14, 100, 100);
+    color: white;
+}
+
+.task-container{
+    width: 50%;
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+.tasks{
+    margin-top: 40px;
+    max-height: 450px;
+    overflow: auto;
+}
+
+.task{
+    margin: 30px 0px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 6px 15px -8px #777777;
+}
+
+.task h2 {
+    display: flex;
+    align-items: center;
+}
+
+.task span{
+    margin: 0px 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #b2b1b1;
+    border-radius: 50%;
+}
+
+.btn{
+    padding: 6px 12px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.edit-btn {
+    background-color: #4CAF50; 
+}
+
+.edit-btn:hover {
+    background-color: #45a049; 
+}
+
+.delete-btn {
+    margin-right: 10px;
+    background-color: #f44336; 
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f; 
+}
