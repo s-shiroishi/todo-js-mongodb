@@ -80,13 +80,21 @@ body{
     align-items: center;
 }
 
+
 .task span{
     margin: 0px 10px;
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-color: #b2b1b1;
     border-radius: 50%;
+}
+
+.task span.completed{
+    background-color: #45a049;
+}
+
+.task span.no-completed{
+    background-color: #b2b1b1;
 }
 
 .btn{
@@ -112,4 +120,75 @@ body{
 
 .delete-btn:hover {
     background-color: #d32f2f; 
+}
+
+.edit-container{
+    height: 400px;
+    width: 50%;
+    max-width: 700px;
+    margin: 100px auto 0px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 6px 15px -8px #777777;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.edit-form{
+    height: 180px;
+    width: 80%;
+    margin: 40px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.edit-title-container{
+    text-align: center;
+}
+
+.edit-title-container h2{
+    font-size: large;
+    font-weight: bold;
+}
+
+.task-id-container span{
+    width: 120px;
+    display: inline-block;
+}
+
+.task-name-container span{
+    width: 120px;
+    display: inline-block;
+}
+
+.task-name-container input{
+    width: 75%;
+    padding: 4px 8px;
+    font-size: large;
+    text-align: left;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+}
+
+.task-completed-container span{
+    width: 120px;
+    display: inline-block;
+}
+
+.back-button-container {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.back-button-container button{
+    padding: 10px 50px;
+    background-color: rgb(39, 36, 36);
+    color: white;
+    border-radius: 5px;
+}
+
+.back-button-container button:hover{
+    background-color: rgb(80, 77, 77);;
 }

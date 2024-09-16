@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="edit-container">
+        <form class="edit-form">
+            <div class="edit-title-container">
+                <h2>タスクの編集</h2>
+            </div>
+            <div class="task-id-container">
+                <span>タスクID</span><span class="task-id"></span>
+            </div>
+            <div class="task-name-container">
+                <span>名前</span><input class="task-name" type="text" name="name">
+            </div>
+            <div class="task-completed-container">
+                <span>完了・未完了</span><input class="task-completed" type="checkbox">
+            </div>
+            <div class="button-container">
+                <button class="btn edit-btn" type="submit">編集</button>
+            </div>
+        </form>
+        <div class="back-button-container">
+            <button class="back-btn">タスクに戻る</button>
+        </div>
+    </div>
+    <script src="edit.js"></script>
+</body>
+</html>

@@ -8,9 +8,9 @@ const taskView = async () => {
         const tasks = await response.json();
         const taskHtml = tasks.map((task) => {
             return `<div class="task">
-            <h2><span></span>${task.name}</h2>
+            <h2><span class="${task.completed ? 'completed' : 'no-completed'}"></span>${task.name}</h2>
             <div>
-                <button class="btn edit-btn"><a href="#">編集</a></button>
+                <button class="btn edit-btn"><a href="edit.html?id=${task._id}">編集</a></button>
                 <button class="btn delete-btn" data-id=${task._id}>削除</button>
             </div>
         </div>

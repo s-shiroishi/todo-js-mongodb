@@ -33,7 +33,7 @@ const updateTask = async (req, res) => {
     try{
         const task = await Task.findByIdAndUpdate(
             req.params.id,
-            {name: req.body.name},
+            {name: req.body.name, completed: req.body.completed},
             {new: true}
         );
         res.json(task);
